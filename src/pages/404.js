@@ -1,26 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-/* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function NotFound() {
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full">
-        <body class="h-full">
-        ```
-      */}
       <div className="min-h-full pt-16 pb-12 flex flex-col bg-white">
         <main className="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex-shrink-0 flex justify-center">
-            <Link to="/" className="inline-flex">
+            <Link href="/" className="inline-flex">
               <span className="sr-only">Workflow</span>
               <Image
-                width="500"
-                height="500"
+                width={500}
+                height={500}
                 src="/img/logo.jpg"
                 className="h-12 w-auto"
                 alt=""
@@ -39,10 +30,7 @@ export default function Example() {
                 Sorry, we couldn’t find the page you’re looking for.
               </p>
               <div className="mt-6">
-                <Link
-                  to="#"
-                  className="text-base font-medium text-indigo-600 hover:text-indigo-500"
-                >
+                <Link href="#" className="text-base font-medium text-indigo-600 hover:text-indigo-500">
                   Go back home<span aria-hidden="true"> &rarr;</span>
                 </Link>
               </div>
@@ -51,30 +39,15 @@ export default function Example() {
         </main>
         <footer className="flex-shrink-0 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex justify-center space-x-4">
-            <Link
-              to="#"
-              className="text-sm font-medium text-gray-500 hover:text-gray-600"
-            >
+            <Link href="#" className="text-sm font-medium text-gray-500 hover:text-gray-600">
               Contact Support
             </Link>
-            <span
-              className="inline-block border-l border-gray-300"
-              aria-hidden="true"
-            />
-            <Link
-              to="#"
-              className="text-sm font-medium text-gray-500 hover:text-gray-600"
-            >
+            <span className="inline-block border-l border-gray-300" aria-hidden="true" />
+            <Link href="#" className="text-sm font-medium text-gray-500 hover:text-gray-600">
               Status
             </Link>
-            <span
-              className="inline-block border-l border-gray-300"
-              aria-hidden="true"
-            />
-            <Link
-              to="#"
-              className="text-sm font-medium text-gray-500 hover:text-gray-600"
-            >
+            <span className="inline-block border-l border-gray-300" aria-hidden="true" />
+            <Link href="#" className="text-sm font-medium text-gray-500 hover:text-gray-600">
               Twitter
             </Link>
           </nav>
