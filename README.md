@@ -3,8 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 Buat Jalanin pake docker =  docker-compose -f docker-compose-prod.yml up -d --build
-Akses sementara = http://51.159.67.88:9090/
-link figma = https://www.figma.com/file/UTEm5MJVP5AlUkIULYDMWK/Page-beIT?node-id=0-1&t=ymvCjSaycvfPnOav-0
+
 
 
 First, run the development server:
