@@ -162,7 +162,13 @@ export default function Example() {
     <div className="bg-white">
       <header className="relative pb-36 bg-blue-gray-400">
         <div className="absolute inset-0">
-          <img className="w-full h-full object-cover" src="/img/4.png" alt="" />
+          <Image
+            width="500"
+            height="500"
+            className="w-full h-full object-cover"
+            src="/img/4.png"
+            alt=""
+          />
           <div
             className="absolute inset-0 bg-blue-gray-400 mix-blend-multiply"
             aria-hidden="true"
@@ -177,9 +183,11 @@ export default function Example() {
               <div className="flex items-center justify-between w-full lg:w-auto">
                 <a href="#">
                   <span className="sr-only">Workflow</span>
-                  <img
+                  <Image
+                    width="500"
+                    height="500"
+                    src="/img/logo.jpg"
                     className="h-8 w-auto sm:h-10"
-                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=blue&shade=500"
                     alt=""
                   />
                 </a>
@@ -228,9 +236,11 @@ export default function Example() {
               <div className="rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <div>
-                    <img
+                    <Image
+                      width="500"
+                      height="500"
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark.svg?color=blue&shade=500"
+                      src="/img/logo.jpg"
                       alt=""
                     />
                   </div>
@@ -301,10 +311,11 @@ export default function Example() {
                   className="flex flex-col bg-white rounded-2xl shadow-xl"
                 >
                   <Image
-                    src={link.imgLocation}
                     width="500"
                     height="500"
                     className="rounded-lg"
+                    alt="bagus"
+                    src={link.imgLocation}
                   />
                 </div>
               ))}
@@ -358,7 +369,9 @@ export default function Example() {
                 />
                 <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
                   <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                    <img
+                    <Image
+                      width="500"
+                      height="500"
                       className="object-cover object-center rounded-3xl shadow-2xl"
                       src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
                       alt=""
@@ -521,7 +534,9 @@ export default function Example() {
         <div className="max-w-md mx-auto py-12 px-4 sm:max-w-7xl sm:px-6 lg:py-16 lg:px-8">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
-              <img
+              <Image
+                width="500"
+                height="500"
                 className="h-10"
                 src="https://tailwindui.com/img/logos/workflow-mark.svg?color=blueGray&shade=300"
                 alt="Company name"
